@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Final project</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的個人網頁</title>
+    <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+       <div class="header-content">
+            <img src="https://t3.ftcdn.net/jpg/02/41/32/08/360_F_241320835_Z2fuURdWsRgtTnkARGQqiorzH8p4fnE5.jpg" alt="我的照片" class="profile-img">
+            <h1>歡迎來到郭子儀的個人網頁</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">關於我</a></li>
+            <li><a href="#portfolio">作品集</a></li>
+           <li><a href="#future">未來目標</a></li>
+            <li><a href="#contact">聯絡我</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+      <div class="about-content">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-38f5XRuMx58bguflhw62RtjtNHhdsRBI5w&s" alt="關於我的照片" class="about-img">
+                <div class="text">
+        <h2>關於我</h2>
+        <p>20歲的老人</p>
+        <p>興趣是吃飯、睡覺、奴役Chatgpt</p>
+                  </div>
+            </div>
+
+    </section>
+    <section id="portfolio">
+        <h2>作品集</h2>
+        <div class="gallery">
+          <div class="item">
+                <img src="https://i.ibb.co/KDRXmGf/4.png" alt="作品1">
+            <p>這是插畫課畫的呆子漫畫</p>
+        </div>
+           <div class="item">
+                <img src="https://i.ibb.co/3rFsXcP/2024-06-12-13-28-07.png" alt="作品2">
+          <p>這是Minecraft自己畫的呆子皮膚。</p>
+        </div>
+           <div class="item">
+                <img src="https://i.ibb.co/3Nf7byZ/IMG-2468.jpg" alt="作品3">
+      <p>這是攝影課上拍的呆子</p>
+        </div>
+            </div>
+    </section>
+   <section id="future">
+        <h2>未來目標</h2>
+         <div class="goals-content">
+                <div class="goals-content">
+                <img src="https://moneynet-land2.cwmoney.net/uploads/2022/04/custom-1254800971.jpeg" alt="未來目標照片" class="goal-img">
+                <div class="text">
+                    <p>長命百歲賺飽飽</p>
+                  <p>不過目前要先想辦法畢業，研究所可以考慮</p>
+                </div>
+            </div>
+    </section>
+    <section id="contact">
+        <h2>聯絡我</h2>
+        <form id="contactForm">
+            <label for="name">名字:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">電子郵件:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">提交</button>
+        </form>
+        <p id="message" style="display: none;">謝謝你的聯絡！</p>
+    </section>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('message').style.display = 'block';
+        });
+    </script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<button type="button" id="BackTop" class="toTop-arrow"></button>
+<script>
+$(function(){
+$('#BackTop').click(function(){
+$('html,body').animate({scrollTop:0}, 333);
+});
+$(window).scroll(function() {
+if ( $(this).scrollTop() > 300 ){
+$('#BackTop').fadeIn(222);
+} else {
+$('#BackTop').stop().fadeOut(222);
+}
+}).scroll();
+});
+</script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
